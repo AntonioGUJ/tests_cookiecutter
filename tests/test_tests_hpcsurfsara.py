@@ -11,6 +11,13 @@ from tests_hpcsurfsara import tests_hpcsurfsara
 from tests_hpcsurfsara import cli
 
 
+def test_add_two_numbers():
+    a = 5
+    b = 3
+    c = tests_hpcsurfsara.add_two_numbers(a,b)
+    assert (a+b == c)
+
+
 @pytest.fixture
 def response():
     """Sample pytest fixture.
